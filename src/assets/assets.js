@@ -58,7 +58,7 @@ const footerIcons = [
 // Header Text and Logo Configuration
 // 'textLogo' is used for displaying the text logo on your portfolio. You can replace it with your name.
 // 'imgLogo' is optional and can be used to show an image logo.
-const textLogo = "John Doe"; // Replace with your name or brand name
+const textLogo = "Berriche fouad"; // Replace with your name or brand name
 const imgLogo = null; // Replace with an image file if you want to use an image logo
 
 // Navigation Menu Items
@@ -73,7 +73,7 @@ const AboutPage = {
   authorDescription:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ad architecto sint quaerat necessitatibus hic voluptas odio ex quidem eaque quo dicta, corrupti, incidunt quis reiciendis aperiam maiores molestias autem?", // Short bio or description about yourself
   getInTouchUrl: "Your contact url", // URL for your contact or form page
-  authorName: "John Doe", // Replace with your name
+  authorName: "Berriche fouad", // Replace with your name
   profileImgTagLine: "Software Engineer @ Google", // Your tagline or job title
   authorContactMail: "johndoe@gmail.com", // Your email address
   authorContactNumber: "843-695-0671", // Your contact number (optional)
