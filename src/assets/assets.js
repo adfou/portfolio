@@ -38,6 +38,8 @@ import {
   SiRedux,
   SiNginx,
   SiVisualstudiocode,
+  SiExpress,
+  SiJavascript
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 
@@ -95,7 +97,7 @@ const AboutPage = {
   authorName: "Berriche fouad", // Replace with your name
   profileImgTagLine: "Software Engineer ", // Your tagline or job title
   authorContactMail: "Berrichefouad0@gmail.com", // Your email address
-  authorContactNumber: "+974-5041-8287", // Your contact number (optional)
+  authorContactNumber: "+974-5041-8398", // Your contact number (optional)
 };
 
 // Education Details
@@ -192,7 +194,10 @@ const skillsPage = [
   SiNextdotjs,
   SiRedux,
   SiNginx,
-  SiVisualstudiocode,TbApi
+  SiVisualstudiocode
+  ,TbApi
+  ,SiExpress
+  ,SiJavascript
   
 ];
 
@@ -206,7 +211,7 @@ const projectsPage = [
     projectDescription: "PRE-Crohn’s is a secure, full-stack web platform designed to help individuals assess their personal risk of developing Crohn’s disease. Users can enter medical history and receive tailored risk insights through a clean, interactive interface. Built with React.js, Node.js (Express), JWT authentication, and a MySQL database, the platform ensures both performance and data security. PRE-Crohn’s combines clinical knowledge with modern technology to support early detection and empower users with accessible, data-driven health guidance.", // Project description
     projectURL: "https://precrohns.mgh.harvard.edu/", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "https://github.com/adfou/preCrohn", // Optional: GitHub repository link
-    tags:[SiTypescript,FaReact,FaNodeJs,SiMysql,TbApi] , // Tech stack used in the project{}
+    tags:[SiJavascript,FaReact,FaNodeJs,SiExpress,SiMysql,TbApi] , // Tech stack used in the project{}
     date: "Jan 2025 - Mai 2025", // Project duration
     urlImage:"/portfolio/pre-c.png"
   },
@@ -224,7 +229,7 @@ const projectsPage = [
     projectDescription: "Om-Koora is an all-in-one digital platform built to streamline football league operations, player registration, match tracking, and technical staff management. Designed for clubs and federations, it provides real-time analytics, automated workflows, and detailed performance insights to power smarter sports administration.", // Project description
     projectURL: "https://league.omkooora.com/", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
-    tags:[SiTypescript,SiNextdotjs,FaNodeJs,SiMysql,SiGraphql] , // Tech stack used in the project{}
+    tags:[SiTypescript,SiNextdotjs,FaNodeJs,SiExpress,SiMysql,SiGraphql] , // Tech stack used in the project{}
     date: "Fev 2023 - May 2024", // Project duration
     urlImage:"/portfolio/omKoora.png"
   },
@@ -233,7 +238,7 @@ const projectsPage = [
     projectDescription: "Do-Calculate is the leading Arabic-language platform offering a comprehensive suite of free online calculators. Whether you're calculating finances, health metrics, scientific values, or educational formulas, Do-Calculate delivers fast, accurate results across dozens of categories like mathematics, pregnancy, chemistry, conversions, and more. Designed for ease and accessibility, it empowers users to make informed decisions in everyday life through smart, reliable tools—all in one place.", // Project description
     projectURL: "https://do-calculate.com/", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
-    tags:[SiTypescript,FaReact,FaNodeJs,SiMysql,TbApi] , // Tech stack used in the project{}
+    tags:[SiTypescript,FaReact,FaNodeJs,SiExpress,SiMysql,TbApi] , // Tech stack used in the project{}
     date: "Dec 2022 - Jan 2023", // Project duration
     urlImage:"/portfolio/do-calculator.png"
   },
@@ -242,7 +247,7 @@ const projectsPage = [
     projectDescription: "Sleep ALL Night is a specialized online platform designed to support parents in improving their children’s sleep through expert-backed advice, interactive tools, and educational resources. Built on WordPress with a fully custom theme and sleep calculator plugin, the platform offers a friendly interface and actionable insights. From sleep tracking to personalized plans, it empowers families to identify sleep challenges and create healthier bedtime routines—all in one accessible, visually engaging hub.", // Project description
     projectURL: "https://sleepallnightdfci.org/", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
-    tags:[SiTypescript,FaReact,FaNodeJs,SiMysql,TbApi] , // Tech stack used in the project{}
+    tags:[FaWordpress,FaReact,SiJavascript,FaCss3Alt,FaPhp,FaHtml5] , // Tech stack used in the project{}
     date: "Nov 2023 - Dec 2022", // Project duration
     urlImage:"/portfolio/sleep-all-night.png"
   },
