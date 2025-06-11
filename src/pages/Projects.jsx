@@ -21,19 +21,23 @@ const Projects = () => {
         setIsHovered(false);
       };
 
-      btn.addEventListener("mouseenter", handleMouseEnter);
-      btn.addEventListener("mouseleave", handleMouseLeave);
+      if (btn) {
+        btn.addEventListener("mouseenter", handleMouseEnter);
+        btn.addEventListener("mouseleave", handleMouseLeave);
+      }
 
       return () => {
-        btn.removeEventListener("mouseenter", handleMouseEnter);
-        btn.removeEventListener("mouseleave", handleMouseLeave);
+        if (btn) {
+          btn.removeEventListener("mouseenter", handleMouseEnter);
+          btn.removeEventListener("mouseleave", handleMouseLeave);
+        }
       };
     }
   }, []);
 
   return (
     <>
-      { (projectsPage && projectsPage.length > 0) && 
+      {projectsPage && projectsPage.length > 0 && (
         <div id="Projects" className={`${containerStyle}`}>
           <PageTitle title={"Projects"} />
           <div>
@@ -46,19 +50,23 @@ const Projects = () => {
                   githubRepository,
                   tags,
                   date,
+                  urlImage,
                 }) => (
                   <Project
-                    key={1}
+                    key={projectName}
                     projectName={projectName}
                     projectDescription={projectDescription}
                     projectURL={projectURL}
                     githubRepository={githubRepository}
                     tags={tags}
                     date={date}
+                    urlImage={urlImage}
                   />
                 )
               )}
             </div>
+
+            {/* 
             <div>
               <Link to={"/"} className="flex justify-center mt-9">
                 <button className="project-btn bg-mainColor hover:bg-mainHover text-white py-3 px-4 rounded-full flex items-center gap-2 transition-all ease-linear">
@@ -71,9 +79,11 @@ const Projects = () => {
                 </button>
               </Link>
             </div>
+            */}
+            
           </div>
         </div>
-      }
+      )}
     </>
   );
 };

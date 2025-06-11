@@ -36,10 +36,7 @@ const Contact = () => {
             Contact Me
           </h1>
           <div className="text-center mb-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos autem
-            deserunt maiores quas facere quae qui perferendis iure, dolorem
-            temporibus ipsum fugit ullam eaque soluta cupiditate, eius et
-            officiis veniam.
+           I'm currently based in Doha, Qatar, and open to both local and remote opportunities. Feel free to reach out for collaborations, freelance projects, or just to connect!
           </div>
           <Link
             to={`mailto:${AboutPage.authorContactMail}`}

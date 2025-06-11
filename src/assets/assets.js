@@ -4,18 +4,44 @@
 // Example of importing a new icon: import { AiFillAmazonSquare } from "react-icons/ai";
 
 import {
-  FaInstagramSquare,
-  FaLinkedin,
-  FaFacebookSquare,
   FaHtml5,
+  FaCss3Alt,
+  FaJs,
   FaPython,
   FaGitAlt,
   FaGithub,
   FaJava,
-  FaJs,
-  FaCss3Alt,
-  FaYoutube,
+  FaNodeJs,
+  FaReact,
+  FaPhp,
+  FaWordpress,
+  FaDatabase,
+  FaDocker,
+  FaLinux,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaFacebookSquare,
+  FaBriefcase
 } from "react-icons/fa";
+
+import {
+  SiDart,
+  SiFlutter,
+  SiDjango,
+  SiTypescript,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiTailwindcss,
+  SiGraphql,
+  SiNextdotjs,
+  SiRedux,
+  SiNginx,
+  SiVisualstudiocode,
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+
+import { MdApi } from "react-icons/md";
 import { BsFiletypeXml } from "react-icons/bs";
 import { TbBrandCpp, TbBrandKotlin } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -27,38 +53,31 @@ import { IoLogoGithub } from "react-icons/io";
 // If you wish to add or remove any icons, modify the 'footerIcons' array below.
 // Example: To change the Twitter icon, replace 'FaSquareXTwitter' with another icon.
 const footerIcons = [
-  {
-    name: "x", // Social media name
-    component: FaSquareXTwitter, // Twitter icon from react-icons
-    link: "Your twitter link", // Replace with your actual Twitter URL
-  },
+  
   {
     name: "linkedIn", // Social media name
     component: FaLinkedin, // LinkedIn icon
-    link: "Your linkedIn link", // Replace with your actual LinkedIn URL
+    link: "https://www.linkedin.com/in/fouad-berriche-37257b19a/", // Replace with your actual LinkedIn URL
   },
-  {
-    name: "facebook",
-    component: FaFacebookSquare, // Facebook icon
-    link: "Your facebook link",
-  },
-  {
-    name: "instagram",
-    component: FaInstagramSquare, // Instagram icon
-    link: "Your instagram link",
-  },
+
   {
     name: "github",
     component: IoLogoGithub, // GitHub icon
-    link: "Your github link",
+    link: "https://github.com/adfou",
   },
+  {
+    name: "mostaql",
+    component: FaBriefcase, // GitHub icon
+    link: "https://mostaql.com/u/berriche_fouad/reviews",
+  },
+
   // You can add more icons or remove existing ones based on your social profiles.
 ];
 
 // Header Text and Logo Configuration
 // 'textLogo' is used for displaying the text logo on your portfolio. You can replace it with your name.
 // 'imgLogo' is optional and can be used to show an image logo.
-const textLogo = "Berriche fouad"; // Replace with your name or brand name
+const textLogo = "Berriche Fouad"; // Replace with your name or brand name
 const imgLogo = null; // Replace with an image file if you want to use an image logo
 
 // Navigation Menu Items
@@ -69,14 +88,14 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 // This object contains all the details for the "About" section of the portfolio.
 // Replace dummy values with your actual information.
 const AboutPage = {
-  authorProfile: "", // Your profile image link
+  authorProfile: "/portfolio//profile-picture.png", // Your profile image link
   authorDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ad architecto sint quaerat necessitatibus hic voluptas odio ex quidem eaque quo dicta, corrupti, incidunt quis reiciendis aperiam maiores molestias autem?", // Short bio or description about yourself
+   "a Software Engineer with a Master's degree in Cybersecurity and a Freelance Full-Stack Developer by passion. I design and build secure, scalable web applications — from elegant frontend interfaces to robust backend architectures. My work spans industries like sports, SEO, healthcare, and travel, where I deliver end-to-end solutions that prioritize both functionality and security." ,
   getInTouchUrl: "Your contact url", // URL for your contact or form page
   authorName: "Berriche fouad", // Replace with your name
-  profileImgTagLine: "Software Engineer @ Google", // Your tagline or job title
-  authorContactMail: "johndoe@gmail.com", // Your email address
-  authorContactNumber: "843-695-0671", // Your contact number (optional)
+  profileImgTagLine: "Software Engineer ", // Your tagline or job title
+  authorContactMail: "Berrichefouad0@gmail.com", // Your email address
+  authorContactNumber: "+974-5041-8287", // Your contact number (optional)
 };
 
 // Education Details
@@ -84,18 +103,18 @@ const AboutPage = {
 // You can add more education objects if necessary.
 const EducationPage = [
   {
-    graduationYear: 2021, // Year of graduation
-    degreeType: "High School", // Type of degree
-    institution: "XYZ College", // Institution name
-    institutionUrl: "", // Institution website link (optional)
+    graduationYear: 2022,
+    degreeType: "Master's Degree in Information Systems Security",
+    institution: "Université Saad Dahlab Blida 1",
+    institutionUrl: "https://en.univ-blida.dz/faculte-des-sciences/formation-informatique/",
   },
   {
-    graduationYear: 2027, // Year of graduation
-    degreeType: "Bachelor's degree", // Degree type
-    institution: "XYZ University", // Institution name
-    institutionUrl: "", // Institution website link (optional)
+    graduationYear: 2020,
+    degreeType: "Bachelor's Degree in Computer Systems",
+    institution: "Université Saad Dahlab Blida 1",
+    institutionUrl: "https://en.univ-blida.dz/faculte-des-sciences/formation-informatique/",
   },
-  // Add more educational qualifications if needed
+ 
 ];
 
 // Certifications Section
@@ -147,38 +166,88 @@ const CertificatesPage = [
 const skillsPage = [
   FaGitAlt,
   FaGithub,
-  TbBrandCpp,
   FaJava,
   FaJs,
   TbBrandKotlin,
   FaPython,
+  SiDjango,
   FaHtml5,
   BsFiletypeXml,
   FaCss3Alt,
   RiTailwindCssFill,
-  FaYoutube,
+  FaNodeJs,
+  FaReact,
+  FaPhp,
+  FaWordpress,
+  FaDatabase,
+  FaDocker,
+  FaLinux,
+  SiFlutter,
+  SiDart,
+  SiTypescript,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiGraphql,
+  SiNextdotjs,
+  SiRedux,
+  SiNginx,
+  SiVisualstudiocode,TbApi
+  
 ];
 
 // Projects Section
 // Replace the dummy project data with your actual projects.
 // You can add or remove projects as needed.
+
 const projectsPage = [
   {
-    projectName: "Git clone", // Project name
-    projectDescription: "lorem ipsum...", // Project description
-    projectURL: "", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "Flask, React.js, MongoDB, Rest API", // Tech stack used in the project
-    date: "Sep 2022 - May 2023", // Project duration
+    projectName: "PRE-Crohn’s – Personalized Risk Estimation for Crohn’s Disease", // Project name
+    projectDescription: "PRE-Crohn’s is a secure, full-stack web platform designed to help individuals assess their personal risk of developing Crohn’s disease. Users can enter medical history and receive tailored risk insights through a clean, interactive interface. Built with React.js, Node.js (Express), JWT authentication, and a MySQL database, the platform ensures both performance and data security. PRE-Crohn’s combines clinical knowledge with modern technology to support early detection and empower users with accessible, data-driven health guidance.", // Project description
+    projectURL: "https://precrohns.mgh.harvard.edu/", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "https://github.com/adfou/preCrohn", // Optional: GitHub repository link
+    tags:[SiTypescript,FaReact,FaNodeJs,SiMysql,TbApi] , // Tech stack used in the project{}
+    date: "Jan 2025 - Mai 2025", // Project duration
+    urlImage:"/portfolio/pre-c.png"
   },
   {
-    projectName: "Git clone", // Project name
-    projectDescription: "lorem ipsum...", // Project description
-    projectURL: "", // Optional: Project demo link (if hosted)
+    projectName: "Cell SEO – Smart Tools for Advanced Search Engine Optimization", // Project name
+    projectDescription: "Cell SEO is a web-based platform that automates SEO tasks like keyword tracking, SERP analysis, and content generation—giving marketers and developers fast, data-driven insights.", // Project description
+    projectURL: "https://shop.cell-seo.com/", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "Flask, React.js, MongoDB, Rest API", // Tech stack used in the project
+    tags: [FaReact,SiDjango,SiPostgresql,RiTailwindCssFill,TbApi], // Tech stack used in the project
     date: "Sep 2022 - May 2023", // Project duration
+    urlImage:"/portfolio/cell-seo-thumb.png"
   },
+  {
+    projectName: "Om-Koora – Smart Platform for Sports League Management and Analytics", // Project name
+    projectDescription: "Om-Koora is an all-in-one digital platform built to streamline football league operations, player registration, match tracking, and technical staff management. Designed for clubs and federations, it provides real-time analytics, automated workflows, and detailed performance insights to power smarter sports administration.", // Project description
+    projectURL: "https://league.omkooora.com/", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "", // Optional: GitHub repository link
+    tags:[SiTypescript,SiNextdotjs,FaNodeJs,SiMysql,SiGraphql] , // Tech stack used in the project{}
+    date: "Fev 2023 - May 2024", // Project duration
+    urlImage:"/portfolio/omKoora.png"
+  },
+  {
+    projectName: "Do-Calculate – Smart Arabic Platform for Online Calculations", // Project name
+    projectDescription: "Do-Calculate is the leading Arabic-language platform offering a comprehensive suite of free online calculators. Whether you're calculating finances, health metrics, scientific values, or educational formulas, Do-Calculate delivers fast, accurate results across dozens of categories like mathematics, pregnancy, chemistry, conversions, and more. Designed for ease and accessibility, it empowers users to make informed decisions in everyday life through smart, reliable tools—all in one place.", // Project description
+    projectURL: "https://do-calculate.com/", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "", // Optional: GitHub repository link
+    tags:[SiTypescript,FaReact,FaNodeJs,SiMysql,TbApi] , // Tech stack used in the project{}
+    date: "Dec 2022 - Jan 2023", // Project duration
+    urlImage:"/portfolio/do-calculator.png"
+  },
+  {
+    projectName: "Sleep ALL Night – A Custom WordPress Platform Helping Children Sleep Better", // Project name
+    projectDescription: "Sleep ALL Night is a specialized online platform designed to support parents in improving their children’s sleep through expert-backed advice, interactive tools, and educational resources. Built on WordPress with a fully custom theme and sleep calculator plugin, the platform offers a friendly interface and actionable insights. From sleep tracking to personalized plans, it empowers families to identify sleep challenges and create healthier bedtime routines—all in one accessible, visually engaging hub.", // Project description
+    projectURL: "https://sleepallnightdfci.org/", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "", // Optional: GitHub repository link
+    tags:[SiTypescript,FaReact,FaNodeJs,SiMysql,TbApi] , // Tech stack used in the project{}
+    date: "Nov 2023 - Dec 2022", // Project duration
+    urlImage:"/portfolio/sleep-all-night.png"
+  },
+  
+  
   // Add more projects or remove the ones you don't need
 ];
 
@@ -193,4 +262,5 @@ export {
   skillsPage,
   projectsPage,
   CertificatesPage,
+
 };

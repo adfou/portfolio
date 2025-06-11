@@ -19,7 +19,7 @@ const Footer = ({ activeElem, setActiveElem }) => {
       </div>
       <div className="flex gap-[10px]">
         {footerIcons.map(({ name, component: IconComponent, link }) => (
-          <Link to={link} key={name} className="flex" title={name}>
+          <Link to={link} key={name} className="flex" title={name} target="_blank">
             <IconComponent className="w-6 bedar-sm:w-9 h-6 bedar-sm:h-9 rounded-lg fill-zinc-400 hover:fill-white transition-colors ease-linear" />
           </Link>
         ))}
